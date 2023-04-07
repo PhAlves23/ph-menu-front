@@ -1,0 +1,78 @@
+@import '../../assets/sass/main'
+
+.modalOverlay 
+  position: fixed
+  inset: 0
+  background-color: rgba(0, 0, 0, 0.6)
+  overflow: hidden
+  width: 100vw
+  height: 100vh
+
+  display: flex
+  align-items: center
+  justify-content: center
+
+  z-index: 999
+
+  .modalBody 
+    background-color: #ffffff
+    padding: 24px
+    width: 60%
+    // height: 60%
+    border-radius: 10px
+
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    justify-content: space-between
+
+    .modalTop
+      width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+      .closeIcon
+        cursor: pointer
+
+    h2 
+      font-size: clamp(1rem, 2.5vw, 1.5rem)
+      margin: 0 auto
+      font-weight: 600
+
+    input 
+      padding: 12px
+      border: 2px solid #c6c5c5c5
+      color: rgba(0, 0, 0, 0.9)
+      font-size: 18px
+      line-height: 24px
+      border-radius: 12px
+      width: 100%
+
+      margin-bottom: 12px
+      
+
+    label 
+      color: #242424
+      font-weight: 500
+      margin-bottom: 8px
+      font-size: 18px
+      text-transform: capitalize
+
+    .btnSecondary 
+      position: initial
+      width: 100%
+      margin-top: 32px
+      background: $green
+      height: 50px
+      border: none
+      border-radius: 12px
+      font-size: 1rem
+      font-weight: bold
+      color: $white
+      cursor: pointer
+
+      &:hover 
+        background-color: $teal
+        transform: scale(1)
+
